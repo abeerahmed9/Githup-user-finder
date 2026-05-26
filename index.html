@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Finder Pro</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>GitHub Finder</h1>
+
+  <div class="search-box">
+
+    <input
+      type="text"
+      id="username"
+      placeholder="Enter GitHub Username"
+    >
+
+    <button id="searchBtn">
+      Search
+    </button>
+
+  </div>
+
+  <div id="loading" class="loading">
+    Loading...
+  </div>
+
+  <div id="profileBox" class="profile-box">
+
+    <img id="avatar" src="" alt="avatar">
+
+    <h2 id="name"></h2>
+
+    <p id="bio"></p>
+
+    <div class="stats">
+
+      <div class="card">
+        <h3 id="followers">0</h3>
+        <span>Followers</span>
+      </div>
+
+      <div class="card">
+        <h3 id="following">0</h3>
+        <span>Following</span>
+      </div>
+
+      <div class="card">
+        <h3 id="repos">0</h3>
+        <span>Repos</span>
+      </div>
+
+    </div>
+
+    <p id="location"></p>
+
+    <a id="profileLink" target="_blank">
+      Visit Profile
+    </a>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
